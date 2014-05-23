@@ -1,0 +1,2 @@
+vaadin-idea-workspace
+=====================
