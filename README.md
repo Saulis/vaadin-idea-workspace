@@ -26,6 +26,8 @@ cd ../vaadin
 ant -f gwt-files.xml unpack.gwt
 ````
 #### 3. Copy project files
+````
+https://github.com/Saulis/vaadin-idea-workspace/archive/master.zip
 
 #### 4. Fix JUnit defaults screenshot directory
 
