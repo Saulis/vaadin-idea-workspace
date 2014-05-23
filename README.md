@@ -19,6 +19,7 @@ git clone https://github.com/vaadin/gwt.git
 git clone https://github.com/vaadin/gwt-tools.git
 ````
 #### 2. Build GWT
+In order for everything to work pretty, we need to compile and unpack GWT outside IDEA.
 ````sh
 cd gwt
 ant
@@ -45,6 +46,6 @@ rm -rf vaadin-idea-workspace
 
 #### 4b. Set screenshot directory 
 1. Copy eclipse-run-selected-test.properties to __work__ directory
-2. Set com.vaadin.testbench.screenshot.directory=__your screenshot directory__
+2. Set com.vaadin.testbench.screenshot.directory=__your screenshot directory__ in eclipse-run-selected-test.properties
 
 
