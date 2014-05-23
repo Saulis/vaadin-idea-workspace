@@ -3,7 +3,7 @@ vaadin-idea-workspace
 
 ### Features available
 * Compile Vaadin (hurray!)
-* Compile Themes and Widgetset
+* Compile Themes and Widgetset (use the Ant build window)
 * Run TB3 tests
 
 ### Missing features
