@@ -13,8 +13,9 @@ vaadin-idea-workspace
 ### Getting started
 #### 1. Clone repos
 ````sh
-git clone https://
-git clone
+git clone https://github.com/vaadin/vaadin.git
+git clone https://github.com/vaadin/gwt.git
+git clone https://github.com/vaadin/gwt-tools.git
 ````
 #### 2. Build GWT
 ````sh
@@ -24,7 +25,7 @@ ant elemental
 cd ../vaadin
 ant -f gwt-files.xml unpack.gwt
 ````
-#### 3. Fix ide.xml
+#### 3. Copy project files
 
 #### 4. Fix JUnit defaults screenshot directory
 
