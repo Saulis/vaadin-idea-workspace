@@ -4,6 +4,8 @@ vaadin-idea-workspace
 Here's a collection of IDEA project files in order to get you up and running with Vaadin (7.2) development.
 If you find something to improve, please send a pull request. There might be cake available for all who contribute.
 
+(only tested these with IDEA 13.1 Ultimate in OSX)
+
 ### Features available
 * Compile Vaadin (hurray!)
 * Compile Themes and Widgetset (use the Ant build window)
