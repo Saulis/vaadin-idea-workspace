@@ -52,7 +52,9 @@ Note! When opening the project for the first time, you might get a warning about
 3. Select __JUnit__
 4. Add VM parameter -Dcom.vaadin.testbench.screenshot.directory=__your screenshot directory__
 
-#### 5b. Set screenshot directory 
+#### OR
+
+#### 5b. Set screenshot directory for running TB3 tests using properties file
 1. Copy eclipse-run-selected-test.properties to __work__ directory
 2. Set com.vaadin.testbench.screenshot.directory=__your screenshot directory__ in eclipse-run-selected-test.properties
 
