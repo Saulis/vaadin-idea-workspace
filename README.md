@@ -50,4 +50,4 @@ Note! When opening the project for the first time, you might get a warning about
 1. Copy eclipse-run-selected-test.properties to __work__ directory
 2. Set com.vaadin.testbench.screenshot.directory=__your screenshot directory__ in eclipse-run-selected-test.properties
 
-
+#### 6. Profit!
