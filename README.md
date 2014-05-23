@@ -32,11 +32,9 @@ modification by hand to your ide.xml if you want. This modification changes ide.
 ````sh
 wget https://github.com/Saulis/vaadin-idea-workspace/archive/master.zip
 unzip master.zip
-cp -R vaadin-idea-workspace/ .
-rm -rf vaadin-idea-workspace
+cp -R vaadin-idea-workspace-master/ .
+rm -rf vaadin-idea-workspace-master
 ````
 
 
 #### 4. Fix JUnit defaults screenshot directory
-
-
