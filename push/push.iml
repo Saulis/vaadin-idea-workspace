@@ -17,19 +17,19 @@
     <orderEntry type="module-library">
       <library name="IvyIDEA">
         <CLASSES>
-          <root url="jar://$USER_HOME$/.ivy2/cache/com.vaadin.external.atmosphere/atmosphere-runtime/bundles/atmosphere-runtime-2.1.2.vaadin2.jar!/" />
           <root url="jar://$USER_HOME$/.ivy2/cache/com.vaadin.external.slf4j/vaadin-slf4j-jdk14/jars/vaadin-slf4j-jdk14-1.6.1.jar!/" />
           <root url="jar://$USER_HOME$/.ivy2/cache/javax.servlet/servlet-api/jars/servlet-api-2.4.jar!/" />
           <root url="jar://$USER_HOME$/.ivy2/cache/com.vaadin.external.atmosphere.client/jquery/wars/jquery-2.1.5.vaadin4.war!/" />
+          <root url="jar://$USER_HOME$/.ivy2/cache/com.vaadin.external.atmosphere/atmosphere-runtime/bundles/atmosphere-runtime-2.1.2.vaadin4.jar!/" />
         </CLASSES>
         <JAVADOC>
-          <root url="jar://$USER_HOME$/.ivy2/cache/com.vaadin.external.atmosphere/atmosphere-runtime/javadocs/atmosphere-runtime-2.1.2.vaadin2-javadoc.jar!/" />
           <root url="jar://$USER_HOME$/.ivy2/cache/com.vaadin.external.slf4j/vaadin-slf4j-jdk14/javadocs/vaadin-slf4j-jdk14-1.6.1-javadoc.jar!/" />
+          <root url="jar://$USER_HOME$/.ivy2/cache/com.vaadin.external.atmosphere/atmosphere-runtime/javadocs/atmosphere-runtime-2.1.2.vaadin4-javadoc.jar!/" />
         </JAVADOC>
         <SOURCES>
-          <root url="jar://$USER_HOME$/.ivy2/cache/com.vaadin.external.atmosphere/atmosphere-runtime/sources/atmosphere-runtime-2.1.2.vaadin2-sources.jar!/" />
           <root url="jar://$USER_HOME$/.ivy2/cache/com.vaadin.external.slf4j/vaadin-slf4j-jdk14/sources/vaadin-slf4j-jdk14-1.6.1-sources.jar!/" />
           <root url="jar://$USER_HOME$/.ivy2/cache/javax.servlet/servlet-api/sources/servlet-api-2.4-sources.jar!/" />
+          <root url="jar://$USER_HOME$/.ivy2/cache/com.vaadin.external.atmosphere/atmosphere-runtime/sources/atmosphere-runtime-2.1.2.vaadin4-sources.jar!/" />
         </SOURCES>
       </library>
     </orderEntry>

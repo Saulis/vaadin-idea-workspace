@@ -30,12 +30,8 @@
           <root url="jar://$USER_HOME$/.ivy2/cache/javax.portlet/portlet-api/jars/portlet-api-2.0.jar!/" />
           <root url="jar://$USER_HOME$/.ivy2/cache/com.google.appengine/appengine-api-1.0-sdk/jars/appengine-api-1.0-sdk-1.2.1.jar!/" />
           <root url="jar://$USER_HOME$/.ivy2/cache/javax.validation/validation-api/jars/validation-api-1.0.0.GA.jar!/" />
-          <root url="jar://$USER_HOME$/.ivy2/cache/com.vaadin/vaadin-sass-compiler/jars/vaadin-sass-compiler-0.9.2.jar!/" />
           <root url="jar://$USER_HOME$/.ivy2/cache/org.w3c.css/sac/jars/sac-1.3.jar!/" />
           <root url="jar://$USER_HOME$/.ivy2/cache/com.vaadin.external.flute/flute/jars/flute-1.3.0.gg2.jar!/" />
-          <root url="jar://$USER_HOME$/.ivy2/cache/net.sourceforge.cssparser/cssparser/jars/cssparser-0.9.11.jar!/" />
-          <root url="jar://$USER_HOME$/.ivy2/cache/org.apache.commons/commons-jexl/jars/commons-jexl-2.1.1.jar!/" />
-          <root url="jar://$USER_HOME$/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar!/" />
           <root url="jar://$USER_HOME$/.ivy2/cache/org.jsoup/jsoup/jars/jsoup-1.6.3.jar!/" />
           <root url="jar://$USER_HOME$/.ivy2/cache/junit/junit/jars/junit-4.11.jar!/" />
           <root url="jar://$USER_HOME$/.ivy2/cache/org.hamcrest/hamcrest-core/jars/hamcrest-core-1.3.jar!/" />
@@ -47,24 +43,20 @@
           <root url="jar://$USER_HOME$/.ivy2/cache/commons-lang/commons-lang/jars/commons-lang-2.6.jar!/" />
           <root url="jar://$USER_HOME$/.ivy2/cache/com.vaadin.external.streamhtmlparser/streamhtmlparser-jsilver/jars/streamhtmlparser-jsilver-0.0.10.vaadin1.jar!/" />
           <root url="jar://$USER_HOME$/.ivy2/cache/com.vaadin.external.google/guava/jars/guava-16.0.1.vaadin1.jar!/" />
-          <root url="jar://$USER_HOME$/.ivy2/cache/com.vaadin.external.google/android-json/jars/android-json-0.0.20131108.vaadin1.jar!/" />
-          <root url="jar://$USER_HOME$/.ivy2/cache/com.vaadin.external.atmosphere/atmosphere-runtime/bundles/atmosphere-runtime-2.1.2.vaadin2.jar!/" />
           <root url="jar://$USER_HOME$/.ivy2/cache/com.vaadin.external.slf4j/vaadin-slf4j-jdk14/jars/vaadin-slf4j-jdk14-1.6.1.jar!/" />
           <root url="jar://$USER_HOME$/.ivy2/cache/commons-io/commons-io/jars/commons-io-2.4.jar!/" />
           <root url="jar://$USER_HOME$/.ivy2/cache/org.slf4j/slf4j-log4j12/jars/slf4j-log4j12-1.6.1.jar!/" />
           <root url="jar://$USER_HOME$/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.6.1.jar!/" />
           <root url="jar://$USER_HOME$/.ivy2/cache/log4j/log4j/bundles/log4j-1.2.16.jar!/" />
           <root url="jar://$USER_HOME$/.ivy2/cache/org.hibernate/hibernate-validator/jars/hibernate-validator-4.2.0.Final.jar!/" />
+          <root url="jar://$USER_HOME$/.ivy2/cache/com.vaadin/vaadin-sass-compiler/jars/vaadin-sass-compiler-0.9.10.jar!/" />
+          <root url="jar://$USER_HOME$/.ivy2/cache/com.vaadin.external.atmosphere/atmosphere-runtime/bundles/atmosphere-runtime-2.1.2.vaadin4.jar!/" />
         </CLASSES>
         <JAVADOC>
           <root url="jar://$USER_HOME$/.ivy2/cache/com.liferay.portal/portal-service/javadocs/portal-service-6.0.2-javadoc.jar!/" />
           <root url="jar://$USER_HOME$/.ivy2/cache/javax.portlet/portlet-api/javadocs/portlet-api-2.0-javadoc.jar!/" />
           <root url="jar://$USER_HOME$/.ivy2/cache/javax.validation/validation-api/javadocs/validation-api-1.0.0.GA-javadoc.jar!/" />
-          <root url="jar://$USER_HOME$/.ivy2/cache/com.vaadin/vaadin-sass-compiler/javadocs/vaadin-sass-compiler-0.9.2-javadoc.jar!/" />
           <root url="jar://$USER_HOME$/.ivy2/cache/com.vaadin.external.flute/flute/javadocs/flute-1.3.0.gg2-javadoc.jar!/" />
-          <root url="jar://$USER_HOME$/.ivy2/cache/net.sourceforge.cssparser/cssparser/javadocs/cssparser-0.9.11-javadoc.jar!/" />
-          <root url="jar://$USER_HOME$/.ivy2/cache/org.apache.commons/commons-jexl/javadocs/commons-jexl-2.1.1-javadoc.jar!/" />
-          <root url="jar://$USER_HOME$/.ivy2/cache/commons-logging/commons-logging/javadocs/commons-logging-1.1.1-javadoc.jar!/" />
           <root url="jar://$USER_HOME$/.ivy2/cache/org.jsoup/jsoup/javadocs/jsoup-1.6.3-javadoc.jar!/" />
           <root url="jar://$USER_HOME$/.ivy2/cache/junit/junit/javadocs/junit-4.11-javadoc.jar!/" />
           <root url="jar://$USER_HOME$/.ivy2/cache/org.hamcrest/hamcrest-core/javadocs/hamcrest-core-1.3-javadoc.jar!/" />
@@ -75,25 +67,21 @@
           <root url="jar://$USER_HOME$/.ivy2/cache/commons-lang/commons-lang/javadocs/commons-lang-2.6-javadoc.jar!/" />
           <root url="jar://$USER_HOME$/.ivy2/cache/com.vaadin.external.streamhtmlparser/streamhtmlparser-jsilver/javadocs/streamhtmlparser-jsilver-0.0.10.vaadin1-javadoc.jar!/" />
           <root url="jar://$USER_HOME$/.ivy2/cache/com.vaadin.external.google/guava/javadocs/guava-16.0.1.vaadin1-javadoc.jar!/" />
-          <root url="jar://$USER_HOME$/.ivy2/cache/com.vaadin.external.google/android-json/javadocs/android-json-0.0.20131108.vaadin1-javadoc.jar!/" />
-          <root url="jar://$USER_HOME$/.ivy2/cache/com.vaadin.external.atmosphere/atmosphere-runtime/javadocs/atmosphere-runtime-2.1.2.vaadin2-javadoc.jar!/" />
           <root url="jar://$USER_HOME$/.ivy2/cache/com.vaadin.external.slf4j/vaadin-slf4j-jdk14/javadocs/vaadin-slf4j-jdk14-1.6.1-javadoc.jar!/" />
           <root url="jar://$USER_HOME$/.ivy2/cache/commons-io/commons-io/javadocs/commons-io-2.4-javadoc.jar!/" />
           <root url="jar://$USER_HOME$/.ivy2/cache/org.slf4j/slf4j-log4j12/javadocs/slf4j-log4j12-1.6.1-javadoc.jar!/" />
           <root url="jar://$USER_HOME$/.ivy2/cache/org.slf4j/slf4j-api/javadocs/slf4j-api-1.6.1-javadoc.jar!/" />
           <root url="jar://$USER_HOME$/.ivy2/cache/log4j/log4j/javadocs/log4j-1.2.16-javadoc.jar!/" />
+          <root url="jar://$USER_HOME$/.ivy2/cache/com.vaadin/vaadin-sass-compiler/javadocs/vaadin-sass-compiler-0.9.10-javadoc.jar!/" />
+          <root url="jar://$USER_HOME$/.ivy2/cache/com.vaadin.external.atmosphere/atmosphere-runtime/javadocs/atmosphere-runtime-2.1.2.vaadin4-javadoc.jar!/" />
         </JAVADOC>
         <SOURCES>
           <root url="jar://$USER_HOME$/.ivy2/cache/com.liferay.portal/portal-service/sources/portal-service-6.0.2-sources.jar!/" />
           <root url="jar://$USER_HOME$/.ivy2/cache/javax.servlet/servlet-api/sources/servlet-api-2.4-sources.jar!/" />
           <root url="jar://$USER_HOME$/.ivy2/cache/javax.portlet/portlet-api/sources/portlet-api-2.0-sources.jar!/" />
           <root url="jar://$USER_HOME$/.ivy2/cache/javax.validation/validation-api/sources/validation-api-1.0.0.GA-sources.jar!/" />
-          <root url="jar://$USER_HOME$/.ivy2/cache/com.vaadin/vaadin-sass-compiler/sources/vaadin-sass-compiler-0.9.2-sources.jar!/" />
           <root url="jar://$USER_HOME$/.ivy2/cache/org.w3c.css/sac/sources/sac-1.3-sources.jar!/" />
           <root url="jar://$USER_HOME$/.ivy2/cache/com.vaadin.external.flute/flute/sources/flute-1.3.0.gg2-sources.jar!/" />
-          <root url="jar://$USER_HOME$/.ivy2/cache/net.sourceforge.cssparser/cssparser/sources/cssparser-0.9.11-sources.jar!/" />
-          <root url="jar://$USER_HOME$/.ivy2/cache/org.apache.commons/commons-jexl/sources/commons-jexl-2.1.1-sources.jar!/" />
-          <root url="jar://$USER_HOME$/.ivy2/cache/commons-logging/commons-logging/sources/commons-logging-1.1.1-sources.jar!/" />
           <root url="jar://$USER_HOME$/.ivy2/cache/org.jsoup/jsoup/sources/jsoup-1.6.3-sources.jar!/" />
           <root url="jar://$USER_HOME$/.ivy2/cache/junit/junit/sources/junit-4.11-sources.jar!/" />
           <root url="jar://$USER_HOME$/.ivy2/cache/org.hamcrest/hamcrest-core/sources/hamcrest-core-1.3-sources.jar!/" />
@@ -104,19 +92,20 @@
           <root url="jar://$USER_HOME$/.ivy2/cache/commons-lang/commons-lang/sources/commons-lang-2.6-sources.jar!/" />
           <root url="jar://$USER_HOME$/.ivy2/cache/com.vaadin.external.streamhtmlparser/streamhtmlparser-jsilver/sources/streamhtmlparser-jsilver-0.0.10.vaadin1-sources.jar!/" />
           <root url="jar://$USER_HOME$/.ivy2/cache/com.vaadin.external.google/guava/sources/guava-16.0.1.vaadin1-sources.jar!/" />
-          <root url="jar://$USER_HOME$/.ivy2/cache/com.vaadin.external.google/android-json/sources/android-json-0.0.20131108.vaadin1-sources.jar!/" />
-          <root url="jar://$USER_HOME$/.ivy2/cache/com.vaadin.external.atmosphere/atmosphere-runtime/sources/atmosphere-runtime-2.1.2.vaadin2-sources.jar!/" />
           <root url="jar://$USER_HOME$/.ivy2/cache/com.vaadin.external.slf4j/vaadin-slf4j-jdk14/sources/vaadin-slf4j-jdk14-1.6.1-sources.jar!/" />
           <root url="jar://$USER_HOME$/.ivy2/cache/commons-io/commons-io/sources/commons-io-2.4-sources.jar!/" />
           <root url="jar://$USER_HOME$/.ivy2/cache/org.slf4j/slf4j-log4j12/sources/slf4j-log4j12-1.6.1-sources.jar!/" />
           <root url="jar://$USER_HOME$/.ivy2/cache/org.slf4j/slf4j-api/sources/slf4j-api-1.6.1-sources.jar!/" />
           <root url="jar://$USER_HOME$/.ivy2/cache/log4j/log4j/sources/log4j-1.2.16-sources.jar!/" />
           <root url="jar://$USER_HOME$/.ivy2/cache/org.hibernate/hibernate-validator/sources/hibernate-validator-4.2.0.Final-sources.jar!/" />
+          <root url="jar://$USER_HOME$/.ivy2/cache/com.vaadin/vaadin-sass-compiler/sources/vaadin-sass-compiler-0.9.10-sources.jar!/" />
+          <root url="jar://$USER_HOME$/.ivy2/cache/com.vaadin.external.atmosphere/atmosphere-runtime/sources/atmosphere-runtime-2.1.2.vaadin4-sources.jar!/" />
         </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="module" module-name="shared-tests" />
     <orderEntry type="module" module-name="push" />
+    <orderEntry type="module" module-name="gwt" />
   </component>
 </module>
 
