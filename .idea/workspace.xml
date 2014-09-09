@@ -250,7 +250,7 @@
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
-    <buildFile url="file://$PROJECT_DIR$/build/idea.xml">
+    <buildFile url="file://$PROJECT_DIR$/build/ide.xml">
       <runInBackground value="false" />
       <targetFilters>
         <filter targetName="theme-and-default-widgetset" isVisible="false" />
