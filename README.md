@@ -34,7 +34,10 @@ ant -f gwt-files.xml unpack.gwt
 curl -S https://raw.githubusercontent.com/Saulis/vaadin-idea-workspace/master/install.sh | bash
 ````
 
-#### 4a. Set screenshot directory for running TB3 tests in JUnit
+-#### 4. Open vaadin folder in IDEA
+-Note! When opening the project for the first time, you might get a warning about missing test modules and IDEA will ask if you would like to remove them. Keep all, they will be loaded automatically later.
+
+#### 5a. Set screenshot directory for running TB3 tests in JUnit
 1. Edit Configurations...
 2. Select __Defaults__
 3. Select __JUnit__
@@ -42,7 +45,7 @@ curl -S https://raw.githubusercontent.com/Saulis/vaadin-idea-workspace/master/in
 
 #### OR
 
-#### 4b. Set screenshot directory for running TB3 tests using properties file
+#### 5b. Set screenshot directory for running TB3 tests using properties file
 1. Copy eclipse-run-selected-test.properties to __work__ directory
 2. Set com.vaadin.testbench.screenshot.directory=__your screenshot directory__ in eclipse-run-selected-test.properties
 
