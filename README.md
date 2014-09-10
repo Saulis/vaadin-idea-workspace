@@ -34,8 +34,8 @@ ant -f gwt-files.xml unpack.gwt
 curl -S https://raw.githubusercontent.com/Saulis/vaadin-idea-workspace/master/install.sh | bash
 ````
 
--#### 4. Open vaadin folder in IDEA
--Note! When opening the project for the first time, you might get a warning about missing test modules and IDEA will ask if you would like to remove them. Keep all, they will be loaded automatically later.
+#### 4. Open vaadin folder in IDEA
+Note! When opening the project for the first time, you might get a warning about missing test modules and IDEA will ask if you would like to remove them. Keep all, they will be loaded automatically later.
 
 #### 5a. Set screenshot directory for running TB3 tests in JUnit
 1. Edit Configurations...
