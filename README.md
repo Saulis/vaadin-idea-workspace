@@ -49,4 +49,4 @@ curl -S https://raw.githubusercontent.com/Saulis/vaadin-idea-workspace/master/in
 1. Copy eclipse-run-selected-test.properties to __work__ directory
 2. Set com.vaadin.testbench.screenshot.directory=__your screenshot directory__ in eclipse-run-selected-test.properties
 
-#### 5. Profit!
+#### 6. Profit!
