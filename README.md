@@ -48,10 +48,23 @@ ant -f gwt-files.xml unpack.gwt
 - Select Import Module
   - Import vaadin/buildhelpers
   - Resolve dependencies by selecting IvyIDEA -> Resolve for buildhelpers module
-  
+- Repeat for module vaadin/gwt, vaadin/push, vaadin/shared
+  - Note! At this point, don't include test/src folder with the modules. We will import those later.
+  - For push and gwt we need to export their dependencies. Unfortunately that can't be done through the settings GUI, so we need to modify their .iml files. ````<orderEntry type="module-library">```` needs to be changed to ````<orderEntry type="module-library" exported="">````
+- Import Module vaadin/server
+  - Add gwt, push, shared as Module dependencies (if they aren't automatically added)
+- Import Module vaadin/client
+  - Exclude GWT facets (the GWT 4 xml files)
+  - Add gwt, shared, server as dependencies (if they aren't automatically added)
 
 ### Getting the widgetset to compile
-- build folders
+- Import module vaadin/client-compiler
+  - Add dependencies to client, shared, gwt, server (if they arent' automatically added)
+- Change the output path to build/classes for modules buildhelpers, client, shared, server, client-compiler
+  - Module settings -> Paths
+- Open the Ant Build window from View -> Tool Windows -> Ant Build
+  - Add vaadin/build/ide.xml
+- Run targets from ide.xml
 
 ### Running the Development Server
 - uitest + server-test modules
