@@ -1,25 +1,25 @@
 vaadin-idea-workspace
 =====================
 
-Here's a collection of IDEA project files in order to get you up and running with Vaadin (7.3) development.
+Here's instructions on how to get you up and running with Vaadin (7.3) development using IntelliJ IDEA 14.
 If you find something to improve, please send a pull request. There might be cake available for all who contribute.
 
-(only tested these with IDEA 13.1 Ultimate in OSX)
+(tested and developed in OSX, so there might be differences to Windows)
 
 ### Features available
 * Compile Vaadin (hurray!)
 * Compile Themes and Widgetset (use the Ant build window)
-* Run TB3 tests
-
-### Missing features
-* Run DevMode
-* An automatic shell script to run all these nasty installation steps
-* Something else probably
+* Run Development Server
+* Run SDM
+* Debug client side in IDEA
+* Run TB4 tests
 
 ### Known issues
 * The ant script for unpacking GWT deletes build/gwt folder under which the gwt.iml file for the gwt module is located.
 
 ### Getting started
+#### 0. Install IDEA 14 (duh)
+
 #### 1. Clone the vaadin repo
 ````sh
 git clone https://github.com/vaadin/vaadin.git
@@ -29,14 +29,24 @@ In order for everything to work pretty, we need to compile and unpack GWT outsid
 ````sh
 ant -f gwt-files.xml unpack.gwt
 ````
-#### 3. Copy workspace files from the internets
-````sh
-curl -S https://raw.githubusercontent.com/Saulis/vaadin-idea-workspace/master/install.sh | bash
-````
+### Getting the first modules to compile
+#### 3. Open vaadin folder in IDEA
+- ivysettings.xml
+- build.properties
+- 
 
-#### 4. Open vaadin folder in IDEA
-Note! When opening the project for the first time, you might get a warning about missing test modules and IDEA will ask if you would like to remove them. Keep all, they will be loaded automatically later.
+### Getting the widgetset to compile
+- build folders
 
+### Running the Development Server
+- uitest + server-test modules
+
+### Running Super DevMode
+- classpath
+
+### Debugging client side in IDEA
+
+### Running Tests
 #### 5a. Set screenshot directory for running TB3 tests in JUnit
 1. Edit Configurations...
 2. Select __Defaults__
