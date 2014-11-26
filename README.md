@@ -83,10 +83,15 @@ ant -f gwt-files.xml unpack.gwt
   - Select Single Instance only
 - Run for Profit
 
-- uitest + server-test modules
-
 ### Running Super DevMode
-- classpath
+This is a bit tricky because we need source directories from multiple modules to be added to the classpath and IDEA doesn't really support that. So we basically need to use a custom classpath:
+- Add Run Configuration from -> Run Edit Configurations
+  - Add -> Application
+  - Main class: ````com.google.gwt.dev.codeserver.CodeServer````
+  - VM options: ````-Xmx512M -XX:MaxPermSize=256M  -classpath "shared/src:client/src:uitest/src:build/classes:build/gwt/gwt-dev.jar:build/gwt/gwt-user.jar:build/gwt/gwt-elemental.jar:/Users/Saulis/.ivy2/cache/org.ow2.asm/asm/jars/asm-5.0.3.jar:/Applications/IntelliJ IDEA 14.app/Contents/lib/idea_rt.jar"```` <- __you need to replace paths to asm-5.0.3.jar and idea_rt.jar with ones that are correct for your environment__
+  - Program arguments: ````com.vaadin.DefaultWidgetSet  -bindAddress 0.0.0.0 ````
+  - Use classpath of module: client
+- Run for Profit
 
 ### Debugging client side in IDEA
 
