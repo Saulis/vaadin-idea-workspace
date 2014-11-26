@@ -59,7 +59,7 @@ ant -f gwt-files.xml unpack.gwt
 
 ### Getting the widgetset to compile
 - Import module vaadin/client-compiler
-  - Add dependencies to client, shared, gwt, server (if they arent' automatically added)
+  - Add dependencies to client, shared, gwt, server (if they aren't automatically added)
 - Change the output path to build/classes for modules buildhelpers, client, shared, server, client-compiler
   - Module settings -> Paths
 - Open the Ant Build window from View -> Tool Windows -> Ant Build
@@ -67,6 +67,22 @@ ant -f gwt-files.xml unpack.gwt
 - Run targets from ide.xml
 
 ### Running the Development Server
+- Import module vaadin/server/tests
+  - Rename the module to server-tests (optional)
+  - Mark src folder as Sources instead of Tests in Module Settings -> Sources
+  - Manually add IvyIDEA facet that points to vaadin/server/ivy.xml
+  - Add dependencies to shared, push, gwt, server (if they aren't automatically added)
+- Import module vaadin/uitest
+  - Ignore GWT facet
+  - Add dependencies to all modules we have imported
+- Add Run Configuration from Run -> Edit Configurations
+  - Add -> Application
+  - Main class: com.vaadin.launcher.DevelopmentServerLauncher
+  - VM options: -ea
+  - Use classpath of module: uitest
+  - Select Single Instance only
+- Run for Profit
+
 - uitest + server-test modules
 
 ### Running Super DevMode
