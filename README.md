@@ -18,7 +18,8 @@ If you find something to improve, please send a pull request. There might be cak
 * The ant script for unpacking GWT deletes build/gwt folder under which the gwt.iml file for the gwt module is located.
 
 ### Getting started
-#### 0. Install IDEA 14 (duh)
+#### 0. Install IDEA 14 (duh) + IvyIDEA plugin
+
 
 #### 1. Clone the vaadin repo
 ````sh
@@ -30,10 +31,24 @@ In order for everything to work pretty, we need to compile and unpack GWT outsid
 ant -f gwt-files.xml unpack.gwt
 ````
 ### Getting the first modules to compile
-#### 3. Open vaadin folder in IDEA
-- ivysettings.xml
-- build.properties
-- 
+#### 1. Open vaadin folder in IDEA
+(ignore possible warnings about missing JDK JavaSE-1.6)
+
+#### 2. Setup project
+- Open project properties
+  - Select SDK of your choosing in Project -> Project SDK (tested to work with 1.7.0_51)
+  - Set Project Compiler Output to vaadin/build/classes in Project -> Project compiler output
+  - Delete Module vaadin from Modules
+- Open IDEA Preferences
+  - Open Project Preferences for IvyIDEA
+  - Set Ivy Settings to use vaadin/ivysettings.xml
+  - Add vaadin/build.properties using Properties -> Add File
+
+#### 3. Add your first modules
+- Select Import Module
+  - Import vaadin/buildhelpers
+  - Resolve dependencies by selecting IvyIDEA -> Resolve for buildhelpers module
+  
 
 ### Getting the widgetset to compile
 - build folders
