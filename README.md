@@ -11,26 +11,24 @@ If you find something to improve, please send a pull request. There might be cak
 * Compile Themes and Widgetset (use the Ant build window)
 * Run Development Server
 * Run CodeServer for Super DevMode
-* Debug client side inside IDEA
+* Debug client side inside IDEA (Firefox/Chrome)
 * Run Unit tests
 * Run TB4 tests
 
-### Known issues
-* The ant script for unpacking GWT deletes build/gwt folder under which the gwt.iml file for the gwt module is located. Remember this if you need to change back and forth between GWT versions.
-
 ### Getting started
 #### 0. Install IDEA 14 + IvyIDEA plugin
-
 
 #### 1. Clone the vaadin repo
 ````sh
 git clone https://github.com/vaadin/vaadin.git
 ````
+
 #### 2. Unpack GWT
 In order for everything to work pretty, we need to compile and unpack GWT outside IDEA.
 ````sh
 ant -f gwt-files.xml unpack.gwt
 ````
+
 ### Getting the first modules to compile
 #### 3. Open vaadin folder in IDEA
 (ignore possible warnings about missing JDK JavaSE-1.6)
@@ -103,6 +101,17 @@ ant -f gwt-files.xml unpack.gwt
 - Run for Profit
 
 #### 9. Debugging client side code inside IDEA
+- Add Run Configuration from -> Run Edit Configurations
+  - Add -> JavaScript Debug
+  - Set URL to anything you want, for example http://localhost:8888/run/ValoThemeUI?restartApplication&superdevmode
+  - Run the configuration with Debug
+  - JetBrains IDE plugin should be automatically installed to your browser, if not, see:
+    - https://www.jetbrains.com/idea/help/configuring-javascript-debugger.html
+  - Add some breakpoints to client-side code and start debugging
+
+> At the time of writing these instructions, the plugin does not seem to work on Firefox: https://youtrack.jetbrains.com/issue/IDEA-133283 - atleast not on OSX Yosemite with FF 33.1
+  
+> If the debugger doesn't seem to connect to your browser, check the browser plugin settings to ensure it's configured to use the same port that your IDEA is listening to. (see the debugger window inside IDEA to check the listened port)
 
 ### Running Tests
 #### 5a. Set screenshot directory for running TB3 tests in JUnit
