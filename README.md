@@ -85,7 +85,7 @@ ant -f gwt-files.xml unpack.gwt
   - VM options: -ea
   - Use classpath of module: uitest
   - Select Single Instance only
-- Run for Profit
+- Run the configuration
 
 > We need to define sources inside server-tests and uitest as __sources__ instead of __tests__ because otherwise they won't be included in the module classpath when using the module as a dependency.
 
@@ -98,7 +98,7 @@ ant -f gwt-files.xml unpack.gwt
   - VM options: ````-Xmx512M -XX:MaxPermSize=256M  -classpath "shared/src:client/src:uitest/src:build/classes:build/gwt/gwt-dev.jar:build/gwt/gwt-user.jar:build/gwt/gwt-elemental.jar:/Users/Saulis/.ivy2/cache/org.ow2.asm/asm/jars/asm-5.0.3.jar:/Applications/IntelliJ IDEA 14.app/Contents/lib/idea_rt.jar"```` <- __you need to replace paths to asm-5.0.3.jar and idea_rt.jar with ones that are correct for your environment__
   - Program arguments: ````com.vaadin.DefaultWidgetSet  -bindAddress 0.0.0.0 ````
   - Use classpath of module: ````client````
-- Run for Profit
+- Run the configuration
 
 #### 9. Debugging client side code inside IDEA
 - Add Run Configuration from -> Run Edit Configurations
@@ -113,17 +113,27 @@ ant -f gwt-files.xml unpack.gwt
   
 > If the debugger doesn't seem to connect to your browser, check the browser plugin settings to ensure it's configured to use the same port that your IDEA is listening to. (see the debugger window inside IDEA to check the listened port)
 
+#### 10. Developing Themes
+- Import module vaadin/WebContent/VAADIN/themes
+- Use __themes__ target in the ide.xml Ant build to compile
+
 ### Running Tests
-#### 5a. Set screenshot directory for running TB3 tests in JUnit
-1. Edit Configurations...
-2. Select __Defaults__
-3. Select __JUnit__
-4. Add VM parameter -Dcom.vaadin.testbench.screenshot.directory=__your screenshot directory__
+> Server-tests module was already imported in an earlier step and they can be run as any JUnit test.
+
+#### 11a. Set screenshot directory for running TB4 tests in JUnit
+- Edit Configurations...
+  - Select __Defaults__
+  - Select __JUnit__
+  - Add VM parameter -Dcom.vaadin.testbench.screenshot.directory=__your screenshot directory__
 
 #### OR
 
-#### 5b. Set screenshot directory for running TB3 tests using properties file
-1. Copy eclipse-run-selected-test.properties to __work__ directory
-2. Set com.vaadin.testbench.screenshot.directory=__your screenshot directory__ in eclipse-run-selected-test.properties
+#### 11b. Set screenshot directory for running TB4 tests using properties file
+- Copy eclipse-run-selected-test.properties to __work__ directory
+- Set com.vaadin.testbench.screenshot.directory=__your screenshot directory__ in eclipse-run-selected-test.properties
 
-#### 6. Profit!
+#### 12. Running TB4 tests
+> If you need to run tests which use the TestingWidgetset, you need to change the build output path for uitest to point also in vaadin/build/classes. After that, you can use the testing-widgetset target in ide.xml Ant build to compile the widgetset.
+
+- Run the Development Server configuration defined in an earlier step.
+- Run the test(s) you want like a normal JUnit test.
