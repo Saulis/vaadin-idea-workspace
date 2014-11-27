@@ -1,4 +1,4 @@
-12 Steps to a Vaadin Framework on IntelliJ IDEA 14
+## 12 Steps to a Vaadin Framework on IntelliJ IDEA 14
 =====================
 
 Here's instructions on how to get you up and running with Vaadin (7.3.x) development using IntelliJ IDEA 14.
