@@ -58,6 +58,8 @@ ant -f gwt-files.xml unpack.gwt
 
 > Unfortunately we can't use the builtin GWT features because our sources for the widgetset is divided between two modules: shared + client.
 
+> IDEA 13 seems to have occasional difficulties when importing modules without "content" (gwt,push modules)
+
 #### <a name="widgetset"></a>6. Getting the widgetset to compile
 - Import module vaadin/client-compiler
   - Add dependencies to client, shared, gwt, server (if they aren't automatically added)
