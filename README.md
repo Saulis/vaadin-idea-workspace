@@ -16,7 +16,7 @@ If you find something to improve, please send a pull request. There might be cak
 * Run [TB4 tests](#tb4tests)
 
 ### Getting started
-#### 0. Install IDEA 14 + IvyIDEA plugin
+#### <a name="compile"></a>0. Install IDEA 14 + IvyIDEA plugin
 
 #### 1. Clone the vaadin repo
 ````sh
@@ -29,7 +29,7 @@ In order for everything to work pretty, we need to compile and unpack GWT outsid
 ant -f gwt-files.xml unpack.gwt
 ````
 
-### <a name="compile"></a>Getting the first modules to compile
+### Getting the first modules to compile
 #### 3. Open vaadin folder in IDEA
 (ignore possible warnings about missing JDK JavaSE-1.6)
 
