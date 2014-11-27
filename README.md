@@ -1,7 +1,7 @@
 vaadin-idea-workspace
 =====================
 
-Here's instructions on how to get you up and running with Vaadin (7.3) development using IntelliJ IDEA 14.
+Here's instructions on how to get you up and running with Vaadin (7.3.x) development using IntelliJ IDEA 14.
 If you find something to improve, please send a pull request. There might be cake available for all who contribute.
 
 (tested and developed in OSX, so there might be differences to Windows)
@@ -10,15 +10,16 @@ If you find something to improve, please send a pull request. There might be cak
 * Compile Vaadin (hurray!)
 * Compile Themes and Widgetset (use the Ant build window)
 * Run Development Server
-* Run SDM
-* Debug client side in IDEA
+* Run CodeServer for Super DevMode
+* Debug client side inside IDEA
+* Run Unit tests
 * Run TB4 tests
 
 ### Known issues
-* The ant script for unpacking GWT deletes build/gwt folder under which the gwt.iml file for the gwt module is located.
+* The ant script for unpacking GWT deletes build/gwt folder under which the gwt.iml file for the gwt module is located. Remember this if you need to change back and forth between GWT versions.
 
 ### Getting started
-#### 0. Install IDEA 14 (duh) + IvyIDEA plugin
+#### 0. Install IDEA 14 + IvyIDEA plugin
 
 
 #### 1. Clone the vaadin repo
@@ -57,6 +58,8 @@ ant -f gwt-files.xml unpack.gwt
   - Exclude GWT facets (the GWT 4 xml files)
   - Add gwt, shared, server as dependencies (if they aren't automatically added)
 
+> Unfortunately we can't use the builtin GWT features because our sources for the widgetset is divided between two modules: shared + client.
+
 #### 6. Getting the widgetset to compile
 - Import module vaadin/client-compiler
   - Add dependencies to client, shared, gwt, server (if they aren't automatically added)
@@ -65,6 +68,8 @@ ant -f gwt-files.xml unpack.gwt
 - Open the Ant Build window from View -> Tool Windows -> Ant Build
   - Add vaadin/build/ide.xml
 - Run targets from ide.xml
+
+> build/classes is the path ide.xml searches for classes when compiling the widgetset.
 
 ### Setting up debugging
 #### 7. Running the Development Server
@@ -84,8 +89,11 @@ ant -f gwt-files.xml unpack.gwt
   - Select Single Instance only
 - Run for Profit
 
+> We need to define sources inside server-tests and uitest as __sources__ instead of __tests__ because otherwise they won't be included in the module classpath when using the module as a dependency.
+
 #### 8. Running CodeServer for Super DevMode
-This is a bit tricky because we need source directories from multiple modules to be added to the classpath and IDEA doesn't really support that. So we basically need to use a custom classpath:
+> This is a bit tricky because we need source directories from multiple modules to be added to the classpath and IDEA doesn't really support that. So we basically need to use a custom classpath:
+
 - Add Run Configuration from -> Run Edit Configurations
   - Add -> Application
   - Main class: ````com.google.gwt.dev.codeserver.CodeServer````
