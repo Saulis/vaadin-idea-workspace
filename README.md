@@ -6,14 +6,14 @@ If you find something to improve, please send a pull request. There might be cak
 
 (tested and developed in OSX, so there might be differences to Windows)
 
-### Features available
-* Compile Vaadin (hurray!)
-* Compile Themes and Widgetset (use the Ant build window)
-* Run Development Server
-* Run CodeServer for Super DevMode
-* Debug client side inside IDEA (Firefox/Chrome)
-* Run Unit tests
-* Run TB4 tests
+### Table of Contents
+* Compile [Vaadin](#compile)
+* Compile [Themes](#themes) and [Widgetset](#widgetset) (use the Ant build window)
+* Run [Development Server](#devserver)
+* Run [CodeServer for Super DevMode](#superdevmode)
+* [Debug client side inside IDEA (Firefox/Chrome)](#debug)
+* Run [Unit tests](#unittests)
+* Run [TB4 tests](#tb4tests)
 
 ### Getting started
 #### 0. Install IDEA 14 + IvyIDEA plugin
@@ -29,7 +29,7 @@ In order for everything to work pretty, we need to compile and unpack GWT outsid
 ant -f gwt-files.xml unpack.gwt
 ````
 
-### Getting the first modules to compile
+### <a name="compile"></a>Getting the first modules to compile
 #### 3. Open vaadin folder in IDEA
 (ignore possible warnings about missing JDK JavaSE-1.6)
 
@@ -58,7 +58,7 @@ ant -f gwt-files.xml unpack.gwt
 
 > Unfortunately we can't use the builtin GWT features because our sources for the widgetset is divided between two modules: shared + client.
 
-#### 6. Getting the widgetset to compile
+#### <a name="widgetset"></a>6. Getting the widgetset to compile
 - Import module vaadin/client-compiler
   - Add dependencies to client, shared, gwt, server (if they aren't automatically added)
 - Change the output path to build/classes for modules buildhelpers, client, shared, server, client-compiler
@@ -70,7 +70,7 @@ ant -f gwt-files.xml unpack.gwt
 > build/classes is the path ide.xml searches for classes when compiling the widgetset.
 
 ### Setting up debugging
-#### 7. Running the Development Server
+#### <a name="devserver"></a>7. Running the Development Server
 - Import module vaadin/server/tests
   - Rename the module to server-tests (optional)
   - Mark src folder as Sources instead of Tests in Module Settings -> Sources
@@ -89,7 +89,7 @@ ant -f gwt-files.xml unpack.gwt
 
 > We need to define sources inside server-tests and uitest as __sources__ instead of __tests__ because otherwise they won't be included in the module classpath when using the module as a dependency.
 
-#### 8. Running CodeServer for Super DevMode
+#### <a name="superdevmode"></a>8. Running CodeServer for Super DevMode
 > This is a bit tricky because we need source directories from multiple modules to be added to the classpath and IDEA doesn't really support that. So we basically need to use a custom classpath:
 
 - Add Run Configuration from -> Run Edit Configurations
@@ -100,7 +100,7 @@ ant -f gwt-files.xml unpack.gwt
   - Use classpath of module: ````client````
 - Run the configuration
 
-#### 9. Debugging client side code inside IDEA
+#### <a name="debug"></a>9. Debugging client side code inside IDEA
 - Add Run Configuration from -> Run Edit Configurations
   - Add -> JavaScript Debug
   - Set URL to anything you want, for example http://localhost:8888/run/ValoThemeUI?restartApplication&superdevmode
@@ -113,11 +113,11 @@ ant -f gwt-files.xml unpack.gwt
   
 > If the debugger doesn't seem to connect to your browser, check the browser plugin settings to ensure it's configured to use the same port that your IDEA is listening to. (see the debugger window inside IDEA to check the listened port)
 
-#### 10. Developing Themes
+#### <a name="themes"></a>10. Developing Themes
 - Import module vaadin/WebContent/VAADIN/themes
 - Use __themes__ target in the ide.xml Ant build to compile
 
-### Running Tests
+### <a name="unittests"></a>Running Tests
 > Server-tests module was already imported in an earlier step and they can be run as any JUnit test.
 
 #### 11a. Set screenshot directory for running TB4 tests in JUnit
@@ -132,7 +132,7 @@ ant -f gwt-files.xml unpack.gwt
 - Copy eclipse-run-selected-test.properties to __work__ directory
 - Set com.vaadin.testbench.screenshot.directory=__your screenshot directory__ in eclipse-run-selected-test.properties
 
-#### 12. Running TB4 tests
+#### <a name="tb4tests"></a>12. Running TB4 tests
 > If you need to run tests which use the TestingWidgetset, you need to change the build output path for uitest to point also in vaadin/build/classes. After that, you can use the testing-widgetset target in ide.xml Ant build to compile the widgetset.
 
 - Run the Development Server configuration defined in an earlier step.
