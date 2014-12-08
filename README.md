@@ -15,7 +15,8 @@ If you find something to improve, please send a pull request. There might be cak
 * Run [TB4 tests](#tb4tests)
 
 ### Getting started
-#### <a name="compile"></a>0. Install IDEA 14 + IvyIDEA plugin
+#### <a name="compile"></a>0. Install IDEA 14
+ - Install IvyIDEA plugin in IDEA Preferences -> Plugins
 
 #### 1. Clone the vaadin repo
 ````sh
