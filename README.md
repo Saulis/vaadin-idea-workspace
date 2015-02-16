@@ -63,7 +63,7 @@ ant -f gwt-files.xml unpack.gwt
 #### <a name="widgetset"></a>6. Getting the widgetset to compile
 - Import module vaadin/client-compiler
   - Add dependencies to client, shared, gwt, server (if they aren't automatically added)
-- Change the output path to build/classes for modules buildhelpers, client, shared, server, client-compiler
+- Change the output path to build/classes for modules buildhelpers, client, shared, server, client-compiler, uitest (for Testing widgetset)
   - Module settings -> Paths
 - Open the Ant Build window from View -> Tool Windows -> Ant Build
   - Add vaadin/build/ide.xml
