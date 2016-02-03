@@ -24,9 +24,18 @@ git clone https://github.com/vaadin/vaadin.git
 ````
 
 #### 2. Unpack GWT
-In order for everything to work pretty, we need to compile and unpack GWT outside IDEA.
+In order for everything to work pretty, we need to compile and unpack GWT outside IDEA. 
+
 ````sh
 ant -f gwt-files.xml unpack.gwt
+````
+
+If ant complains that it fails to create task or type 'antlib:org.apache.ivy.ant:settings', it misses the Ivy jar in it's antlib folder.
+Download [Ivy](http://ant.apache.org/ivy/download.cgi), extract it and copy the ivy-x.x.x.jar in your antlib folder. Your antlib folder 
+is the 'lib' subdirectory of your ant home folder, which you can find with
+
+````sh
+ant -diagnostics | grep ant.home
 ````
 
 ### Getting the first modules to compile
