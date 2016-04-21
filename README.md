@@ -1,6 +1,9 @@
 ## 12 Steps to a Vaadin Framework on IntelliJ IDEA 14
 
-Here's instructions on how to get you up and running with Vaadin (7.3.x) development using IntelliJ IDEA 14.
+Here's instructions on how to get you up and running with Vaadin (7.3.x - 7.6.x) development using IntelliJ IDEA 12-15, 2016.
+
+**For Vaadin Framevork version 7.7+ please refer to [readme](https://github.com/vaadin/vaadin/blob/master/README.md).**
+
 If you find something to improve, please send a pull request. There might be cake available for all who contribute.
 
 (tested and developed in OSX and IDEA Ultimate 14, so there might be differences to Windows)
